@@ -21,8 +21,6 @@ const slack_app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   receiver: expressReceiver,
   logLevel: LogLevel.DEBUG,
-  processBeforeResponse,
-  deferInitialization,
 //  clientId: process.env.SLACK_CLIENT_ID,
 //  clientSecret: process.env.SLACK_CLIENT_SECRET,
 //   socketMode: true,
