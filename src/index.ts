@@ -36,6 +36,7 @@ expressReceiver.router.get('/', (_req, res) => {
 // Start bolt app
 (async () => {
   try {
+    slack_app.init();
     await slack_app.start(process.env.PORT || 3000);
     console.log('⚡️ Bolt app is running! ⚡️');
   } catch (error) {
